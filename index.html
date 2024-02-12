@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Room</title>
+</head>
+<body>
+    <div>
+        <div id="light1" class="light">
+            <div class="bola" id="bola1"></div>
+        </div>
+        <div id="light2" class="light"> 
+            <div class="bola" id="bola2"></div>
+        </div>
+        
+    </div>
+</body>
+<style>
+    .light {
+        height: 100px;
+        width: 300px;
+        padding: 10px;
+        border-color: black;
+        border-style: double;
+        border-width: 1px;
+        border-radius: 20%;
+        position: relative;
+    }
+
+    .bola {
+        border-radius: 50%;
+        background-color: blue;
+        height: 50px;
+        width: 50px;
+        padding: 20px;
+        position: absolute;
+        transition: all 0.1s ease; /* Adicionado uma transição de 0.5 segundos com função de transição ease */
+    }
+</style>
+<script>
+    let light = document.getElementById("light1");
+    let bola = document.getElementById("bola1");
+    const dist = "210px"
+
+    function lightOnOff(bolaId){
+        let bola = document.getElementById(bolaId);
+        
+        if (bola.style.right == dist || bola.style.right === "") {
+            bola.style.right = "auto";
+            bola.style.left = dist;
+        } else {
+            bola.style.right = dist;
+            bola.style.left = "auto";
+        }
+    }
+
+    light1.onclick = function() {
+        if (bola.style.right == dist || bola.style.right === "") {
+            bola.style.right = "auto";
+            bola.style.left = dist;
+        } else {
+            bola.style.right = dist;
+            bola.style.left = "auto";
+        }    
+    };
+</script>
+</html>
+
+
+
+
+
