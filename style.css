@@ -1,0 +1,20 @@
+.light {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    border-color: black;
+    border-style: double;
+    border-width: 1px;
+    border-radius: 20%;
+    position: relative;
+}
+
+.bola {
+    border-radius: 50%;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    position: absolute;
+    transition: all 0.1s ease; /* Adicionado uma transição de 0.5 segundos com função de transição ease */
+}
